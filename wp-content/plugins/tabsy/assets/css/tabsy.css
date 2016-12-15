@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'tabsy';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/fontello.eot?26920411");
+    src: url("../font/fontello.eot?26920411#iefix") format("embedded-opentype"), url("../font/fontello.woff?26920411") format("woff"), url("../font/fontello.ttf?26920411") format("truetype"), url("../font/fontello.svg?26920411#fontello") format("svg");
+}
+
+body .tabsy,
+body .tabsy ul.tabsy-nav,
+body .tabsy ul.tabsy-nav li,
+body .tabsy ul.tabsy-nav li a,
+body .tabsy .tabsy-container {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    outline: 0;
+    outline: 0 none;
+    list-style: none;
+    list-style-type: none;
+}
+
+body .tabsy {
+    visibility: hidden;
+    padding-top: 10px;
+}
+
+body .tabsy ul.tabsy-nav li {
+    float: left;
+}
+
+body .tabsy ul.tabsy-nav li a {
+    top: 1px;
+    margin-right: -1px;
+    padding: 2px 12px;
+    min-height: 1px;
+    /*border-width: 1px 1px 0 1px;*/
+    font-weight: inherit;
+    color: #111;
+    /*background: #F2F0F0;
+    background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#fdfcfc), color-stop(50%,#fbf9f9), color-stop(50%,#f7f5f6), color-stop(100%,#f2f0f0) );
+    background-image: -webkit-linear-gradient(top, #fdfcfc,#fbf9f9 50%,#f7f5f6 50%,#f2f0f0);
+    background-image: -moz-linear-gradient(top, #fdfcfc,#fbf9f9 50%,#f7f5f6 50%,#f2f0f0);
+    background-image: -o-linear-gradient(top, #fdfcfc,#fbf9f9 50%,#f7f5f6 50%,#f2f0f0);
+    background-image: linear-gradient(top, #fdfcfc,#fbf9f9 50%,#f7f5f6 50%,#f2f0f0);*/
+    cursor: pointer;
+}
+
+body .tabsy ul.tabsy-nav li.tabsy-active {
+    z-index: 1;
+    top: 2px;
+    margin-top: -2px;
+    padding-bottom: 2px;
+    background: none;
+    
+}
+
+body .tabsy ul.tabsy-nav li.tabsy-active a {
+    background: #fff;
+    color: #27d;
+    border-bottom:1px solid #1f6cc9 !important;
+}
+
+body .tabsy .tabsy-container {
+    clear: both;
+    zoom: 1;
+    /*border-width: 1px;*/
+    overflow: hidden;
+    background: #fff;
+}
+
+body .tabsy .tabsy-container .tabsy-content {
+    display: block;
+    z-index: 8;
+    position: absolute;
+    zoom: 1;
+    width: auto;
+    height: auto;
+    /*padding: 18px 24px;*/
+    overflow: hidden;
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+
+body .tabsy .tabsy-container .tabsy-content.tabsy-active {
+    z-index: 10;
+    opacity: 1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+body .tabsy.tabsy-bordered ul.tabsy-nav li,
+body .tabsy.tabsy-bordered ul.tabsy-nav li a,
+body .tabsy.tabsy-bordered .tabsy-container {
+    border-color: #CECECE;
+    border-style: solid;
+}
+
+body .tabsy.tabsy-shadow ul.tabsy-nav li a {
+    text-shadow: 0 1px #fff;
+}
+
+body .tabsy.tabsy-shadow ul.tabsy-nav li.tabsy-nav-first {
+    -webkit-box-shadow: rgba(0,0,0,0.125) -3px 1px 1px -3px;
+    -moz-box-shadow: rgba(0,0,0,0.125) -3px 1px 1px -3px;
+    box-shadow: rgba(0,0,0,0.125) -3px 1px 1px -3px;
+}
+
+body .tabsy.tabsy-shadow ul.tabsy-nav li.tabsy-nav-last {
+    -webkit-box-shadow: rgba(0,0,0,0.125) 3px 1px 1px -3px;
+    -moz-box-shadow: rgba(0,0,0,0.125) 3px 1px 1px -3px;
+    box-shadow: rgba(0,0,0,0.125) 3px 1px 1px -3px;
+}
+
+body .tabsy.tabsy-shadow .tabsy-container {
+    -webkit-box-shadow: rgba(0,0,0,0.125) 0 0 3px;
+    -moz-box-shadow: rgba(0,0,0,0.125) 0 0 3px;
+    box-shadow: rgba(0,0,0,0.125) 0 0 3px;
+}
+
+body .tabsy.tabsy-bottom ul.tabsy-nav {
+    position: relative;
+}
+
+body .tabsy.tabsy-bottom ul.tabsy-nav li a {
+    z-index: 1;
+    top: -1px;
+    border-width: 0 1px 1px 1px;
+}
+
+body .tabsy.tabsy-bottom ul.tabsy-nav li.tabsy-active {
+    z-index: 15;
+    top: 1px;
+    padding-top: 1px;
+}
+
+body .tabsy.tabsy-bottom ul.tabsy-nav li.tabsy-active a {
+    top: -1px;
+    background: #fff;
+}
+
+body .tabsy.tabsy-bottom .tabsy-container {
+    z-index: 10;
+}
+
+body .tabsy.tabsy-bottom.tabsy-responsive ul.tabsy-nav.tabsy-desktop {
+    margin-top: 5px;
+    padding-top: 0;
+}
+
+body .tabsy.tabsy-bottom.tabsy-responsive ul.tabsy-nav.tabsy-desktop li.tabsy-nav-first a {
+    border-width: 1px;
+}
+
+body .tabsy.tabsy-align-right ul.tabsy-nav {
+    float: right;
+}
+
+body .tabsy.tabsy-align-right ul.tabsy-nav li.tabsy-nav-last a {
+    margin-right: 0;
+}
+
+body .tabsy.tabsy-align-justify ul.tabsy-nav li.tabsy-nav-last a {
+    margin-right: 0;
+}
+
+body .tabsy.tabsy-small ul.tabsy-nav.tabsy-desktop li {
+    width: 33.3333% !important;
+    text-align: center;
+}
+
+body .tabsy.tabsy-small ul.tabsy-nav.tabsy-desktop li a,
+body .tabsy.tabsy-small ul.tabsy-nav.tabsy-desktop li li.tabsy-nav-last a {
+    margin-right: 0;
+}
+
+body .tabsy.tabsy-small ul.tabsy-nav.tabsy-desktop li.tabsy-nav-2 {
+    width: 50% !important;
+}
+
+body .tabsy.tabsy-small ul.tabsy-nav.tabsy-desktop li.tabsy-nav-1 {
+    width: 100% !important;
+}
+
+body .tabsy.tabsy-small.tabsy-bottom ul.tabsy-nav {
+    position: relative;
+}
+
+body .tabsy.tabsy-small.tabsy-bottom ul.tabsy-nav li a {
+    top: 0;
+}
+
+body .tabsy.tabsy-small.tabsy-bottom ul.tabsy-nav li.tabsy-active {
+    z-index: 15;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body .tabsy.tabsy-small.tabsy-bottom ul.tabsy-nav li.tabsy-active a {
+    top: 0;
+    margin-bottom: 0;
+}
+
+body .tabsy ul.tabsy-nav.tabsy-mobile {
+    display: none;
+}
+
+body .tabsy ul.tabsy-nav.tabsy-mobile .tabsy-mobile-menu {
+    float: right;
+}
+
+body .tabsy ul.tabsy-nav.tabsy-mobile .tabsy-mobile-menu:before {
+    content: '\e800';
+    display: inline-block;
+    width: 1em;
+    margin-right: .2em;
+    margin-left: .2em;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    font-family: "tabsy";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1em;
+    speak: none;
+}
+
+body .tabsy.tabsy-responsive ul.tabsy-nav {
+    display: none;
+}
+
+body .tabsy.tabsy-responsive ul.tabsy-nav.tabsy-mobile,
+body .tabsy.tabsy-responsive ul.tabsy-nav.tabsy-mobile li {
+    display: block;
+    float: none;
+    position: relative;
+    width: 100%;
+}
+
+body .tabsy.tabsy-responsive ul.tabsy-nav.tabsy-mobile a,
+body .tabsy.tabsy-responsive ul.tabsy-nav.tabsy-mobile li a {
+    position: relative;
+    margin-right: 0;
+    padding-right: 40px;
+}
+
+body .tabsy.tabsy-responsive ul.tabsy-nav.tabsy-mobile a .tabsy-mobile-menu,
+body .tabsy.tabsy-responsive ul.tabsy-nav.tabsy-mobile li a .tabsy-mobile-menu {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+
+body .tabsy.tabsy-responsive ul.tabsy-nav.tabsy-desktop {
+    z-index: 1000;
+    position: absolute;
+    top: inherit;
+    left: 0;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid #CECECE;
+    background: #fff;
+}
+
+body .tabsy.tabsy-responsive ul.tabsy-nav.tabsy-desktop li {
+    display: block;
+    float: none;
+    position: relative;
+    width: 100%;
+}
+
+body .tabsy.tabsy-responsive ul.tabsy-nav.tabsy-desktop li a {
+    margin-right: 0;
+}
+
+body .tabsy.tabsy-responsive ul.tabsy-nav.tabsy-desktop li.tabsy-nav-last a {
+    border-bottom: 1px solid #CECECE;
+}
+div.wptabsy-inner.tabsy-container{
+	border-top-width: 1px;
+}

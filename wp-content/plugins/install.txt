@@ -1,0 +1,7 @@
+
+Just copy to your plugin directory and activate from the plugins page.
+Directions for use can be found at http://meidell.dk/archives/2004/09/12/brians-latest-comments/
+
+Only tested with Wordpress 1.5.
+
+/Brian Meidell
