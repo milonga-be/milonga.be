@@ -20,8 +20,22 @@
 				var iframe = jQuery(this)[0];
 				iframe.style.height=(iframe.contentDocument.body.scrollHeight + 50) +'px';
     		});
-		} 
-		document.domain = "milonga.be";
+		}
+		jQuery(function(){ /* to make sure the script runs after page load */
+
+			$('.milonga-description').expander({
+			  slicePoint: 300,
+			  widow: 2,
+			  expandEffect: 'slideDown',
+			  collapseEffect: 'slideUp',
+			  expandText: '...READ MORE',
+			  userCollapseText: 'LESS',
+			  afterExpand : function(){ $(this).find('.details').css('display', 'inline'); window.parent.resizeIframe();  },
+			  afterCollapse : function(){ window.parent.resizeIframe(); },
+			});
+			
+		});
+		document.domain = "milonga.local";
 	</script>
 	<?php wp_head(); ?>
 </head>

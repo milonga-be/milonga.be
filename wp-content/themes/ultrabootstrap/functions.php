@@ -96,6 +96,7 @@ function ultrabootstrap_scripts() {
 	wp_enqueue_style( 'ultrabootstrap-fontawesome', get_template_directory_uri().'/css/font-awesome.css' );
 	wp_enqueue_style( 'ultrabootstrap-googlefonts', '//fonts.googleapis.com/css?family=Roboto:400,300,700');
 	wp_enqueue_style( 'ultrabootstrap-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'teachers.milonga.be-style', get_template_directory_uri().'/css/teachers.css' );	
 
 
 	if(is_rtl()) {
@@ -107,6 +108,7 @@ function ultrabootstrap_scripts() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'ultrabootstrap-bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'ultrabootstrap-scripts', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'agenda.milonga.be-expander', get_template_directory_uri() . '/js/jquery.expander.min.js', array(), '1.0.0', true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
