@@ -96,7 +96,7 @@ function ultrabootstrap_scripts() {
 	wp_enqueue_style( 'ultrabootstrap-fontawesome', get_template_directory_uri().'/css/font-awesome.css' );
 	wp_enqueue_style( 'ultrabootstrap-googlefonts', '//fonts.googleapis.com/css?family=Roboto:400,300,700');
 	wp_enqueue_style( 'ultrabootstrap-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'teachers.milonga.be-style', get_template_directory_uri().'/css/teachers.css' );	
+	wp_enqueue_style( 'teachers.milonga.be-style', str_replace(array('http://milonga.local','http://www.milonga.be'), array('http://teachers.milonga.local','http://teachers.milonga.be'), get_site_url()) . '/frontend/web/css/site.css' );	
 
 
 	if(is_rtl()) {

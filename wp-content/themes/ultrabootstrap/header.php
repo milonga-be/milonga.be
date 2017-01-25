@@ -21,23 +21,22 @@
 				iframe.style.height=(iframe.contentDocument.body.scrollHeight + 50) +'px';
     		});
 		}
-		jQuery(function(){ /* to make sure the script runs after page load */
-
-			$('.milonga-description').expander({
+		document.domain = "<?= str_replace(array("http://www.","http://"),array(""),get_site_url()) ?>";
+	</script>
+	<?php wp_head(); ?>
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			jQuery('.milonga-description').expander({
 			  slicePoint: 300,
 			  widow: 2,
 			  expandEffect: 'slideDown',
 			  collapseEffect: 'slideUp',
 			  expandText: '...READ MORE',
 			  userCollapseText: 'LESS',
-			  afterExpand : function(){ $(this).find('.details').css('display', 'inline'); window.parent.resizeIframe();  },
-			  afterCollapse : function(){ window.parent.resizeIframe(); },
+			  afterExpand : function(){ $(this).find('.details').css('display', 'inline'); },
 			});
-			
 		});
-		document.domain = "milonga.local";
 	</script>
-	<?php wp_head(); ?>
 </head>
 
 
