@@ -1,0 +1,33 @@
+td.dayname,td.starthour{
+    width:8%;
+}
+td.levelname{
+    width:25%;
+}
+html body{
+    background-color: white;
+    margin-top:20px;
+}
+.school h4{
+    margin-top:10px;
+}
+.school{
+    margin-bottom:40px;
+}
+.school-info .fa{
+    font-size:1.2em;
+}
+.school-info a{
+    margin-right: 10px;
+}
+.lessons .sm{
+    display:none;
+}
+@media screen and (max-width: 480px) {
+    .lessons .sm{
+        display:inline;
+    }
+    .lessons .lg{
+        display: none;
+    }
+}
