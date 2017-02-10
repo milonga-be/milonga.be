@@ -1005,3 +1005,11 @@ body .tabsy ul.tabsy-nav li.tabsy-active a{
 .floating-left{
 	float:left;display:block;margin-right:10px;margin-bottom:5px;text-align:left;
 }
+.btn-big{
+	background-color: #F66062;
+	height:36px;
+	line-height:26px;
+	margin-top:5px;
+	margin-right:1%;
+	width:48.5%;
+}
