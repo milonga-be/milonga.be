@@ -14,9 +14,9 @@ function URLInclude($params = array()) {
 	    'url' => 'http://www.google.com'
 	), $params));
 
-	$args = array(
-    	'timeout'     => 60,
-    );
+	// $args = array(
+ //    	'timeout'     => 60,
+ //    );
 
 	$option = '';
 	$parse = parse_url($url);
@@ -25,6 +25,7 @@ function URLInclude($params = array()) {
 		$option = '--resolve ' . $parse['host'] . ':80:127.0.0.1';
 	}
 	$data = shell_exec("curl ". $option ." \"" . $url . "\"" );
+	// $data = wp_remote_get( $url );
 	return $data;
 }
 

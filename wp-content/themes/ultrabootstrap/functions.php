@@ -109,6 +109,7 @@ function ultrabootstrap_scripts() {
 	wp_enqueue_script( 'ultrabootstrap-bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'ultrabootstrap-scripts', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
 	wp_enqueue_script( 'agenda.milonga.be-expander', get_template_directory_uri() . '/js/jquery.expander.min.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'teachers.milonga.be-scripts', str_replace(array('http://milonga.local','http://www.milonga.be'), array('http://teachers.milonga.local','http://teachers.milonga.be'), get_site_url()) . '/frontend/web/js/site.js', array(), '1.0.0', true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

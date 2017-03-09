@@ -13,7 +13,7 @@
         <ul class="list-inline">
             <!--li><i class="fa fa-user"></i>  &nbsp;<?php echo get_the_author_meta('display_name');?></li-->
             <li><i class="fa fa-calendar"></i> <?php echo get_the_date('d M Y');?></li>
-            <li><i class="fa fa-comments-o"></i> &nbsp; <?php comments_popup_link('zero comment','one comment', '% comments');?></li>
+            <!--li><i class="fa fa-comments-o"></i> &nbsp; <?php comments_popup_link('zero comment','one comment', '% comments');?></li-->
         </ul>
     </div>
 
